@@ -10,7 +10,9 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"C:\\11772689\\depo\\cucumbercase1\\Features\\case1.feature"},
+@CucumberOptions(
+		plugin= {"pretty","json:target//cucumber.json"},
+		features= {"C:\\11772689\\depo\\cucumbercase1\\Features\\case1.feature"},
 glue= {"testmesteps"},
 monochrome=true,
 dryRun=false)
