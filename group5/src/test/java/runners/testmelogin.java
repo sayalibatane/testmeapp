@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin= {"pretty","json:target//cucumber.json"},
+		plugin= {"json:target/cucumber.json"},
 		features= {"C:\\11772689\\depo\\cucumbercase1\\Features\\case1.feature"},
 glue= {"testmesteps"},
 monochrome=true,
